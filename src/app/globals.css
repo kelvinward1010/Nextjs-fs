@@ -19,3 +19,52 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  padding-top: 4rem; /* Ensure content doesn't overlap with fixed header */
+}
+
+aside {
+  width: 16rem; /* Sidebar width */
+  background-color: #555;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  top: 4rem; /* Align with header height */
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+main {
+  margin-left: 16rem; /* Same as width of sidebar */
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
