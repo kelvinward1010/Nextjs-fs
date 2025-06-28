@@ -7,13 +7,13 @@ export default function Sidebar() {
             <nav>
                 <ul>
                     <li>
-                        <Link href={'/parallelroutes'}>Home</Link>
+                        <Link href="/parallelroutes">Home</Link>
                     </li>
                     <li>
-                        <Link href={'/parallelroutes/team'}>Team</Link>
+                        <Link href={{ pathname: '/parallelroutes', query: { team: 'true' } }}>Team</Link>
                     </li>
                     <li>
-                        <Link href={'/parallelroutes/analytics'}>Analytics</Link>
+                        <Link href={{ pathname: '/parallelroutes', query: { analytics: 'true' } }}>Analytics</Link>
                     </li>
                 </ul>
             </nav>

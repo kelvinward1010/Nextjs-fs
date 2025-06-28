@@ -16,16 +16,12 @@ export default function Layout({
             <Header />
             <div className="flex flex-1 pt-16">
                 <Sidebar />
-                <main className="flex-1 p-4 bg-gray-100 ml-64">
+                <main className="flex-1 p-4 bg-gray-100 text-black ml-64">
                     <div className='w-full'>
                         {children}
                     </div>
-                    <div>
-                        {team}
-                    </div>
-                    <div>
-                        {analytics}
-                    </div>
+                    {team && <div>{team}</div>}
+                    {analytics && <div>{analytics}</div>}
                 </main>
             </div>
         </div>

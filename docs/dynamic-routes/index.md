@@ -15,7 +15,7 @@
 - Sử dụng: Để tạo các route có thể nhận hoặc không nhận các phân đoạn thêm. Ví dụ, pages/posts/[...slug].js có thể xử lý cả /posts và /posts/2021/10/hello-world.
 
 4. File System Based Routing
-- File System Based Routing: Next.jstự động tạo các route dựa trên cấu trúc thư mục trong thư mục pages. Mỗi file trong pages tương ứng với một route.
+- File System Based Routing: Next.js tự động tạo các route dựa trên cấu trúc thư mục trong thư mục pages. Mỗi file trong pages tương ứng với một route.
 
 - Sử dụng: Để thiết lập các route một cách nhanh chóng và dễ dàng dựa trên cấu trúc thư mục.
 

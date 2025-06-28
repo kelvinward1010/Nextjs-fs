@@ -16,8 +16,8 @@ export default function LayoutAll({
             </header>
             <main>
                 <div>{children}</div>
-                <div>{team}</div>
-                <div>{analytics}</div>
+                {team && <aside className="flex-1">{team}</aside>}
+                {analytics && <aside className="flex-1">{analytics}</aside>}
             </main>
         </div>
     );
